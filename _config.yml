@@ -7,8 +7,16 @@ baseurl: "/tideblog"
 url: "https://turbopope.github.io/tideblog/"
 github_username: turbopope
 gems:
-- jekyll-sitemap
-
+  - jekyll-sitemap
+collections:
+  chapters:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: page
 
 # Build settings
 markdown: kramdown
