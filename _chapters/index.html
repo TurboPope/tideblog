@@ -5,7 +5,7 @@ layout: default
   <h1>Chapters</h1>
 
   <ul class="chapters-list">
-    {% for chapter in site.chapters limit:3 %}
+    {% for chapter in site.chapters %}
       <li>
         <a href="{{ chapter.url | prepend: site.baseurl}}">{{ chapter.title }}</a>
       </li>
