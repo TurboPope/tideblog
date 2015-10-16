@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <div class="spoiler-warning">
+    <p>Diese Seite enthält Spoiler für: {{page.spoilers}}</p>
+  </div>
+
+  <p>
+    <button class="spoiler-trigger">Zeige Spoiler</button>
+  </p>
+
+  <article class="spoiler-content">
+    {{ content }}
+  </article>
+
+</div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    $(".spoiler-content").hide();
+    $(".spoiler-trigger").on("click", function() {$(".spoiler-content").toggle()});
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
