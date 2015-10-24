@@ -3,7 +3,7 @@ title: Tideblog
 email: mbrack@uni-koblenz.de
 description: >
   Lol hello
-baseurl: "/tideblog"
+baseurl: ""
 url: "https://turbopope.github.io/tideblog/"
 github_username: turbopope
 gems:
