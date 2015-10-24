@@ -4,7 +4,7 @@ email: mbrack@uni-koblenz.de
 description: >
   Lol hello
 baseurl: ""
-url: "https://turbopope.github.io/tideblog/"
+url: "https://github.com/TurboPope/tideblog"
 github_username: turbopope
 gems:
   - jekyll-sitemap
