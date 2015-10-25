@@ -1,0 +1,19 @@
+{
+  "name": "tideblog",
+  "homepage": "https://github.com/TurboPope/tideblog",
+  "authors": [
+    "turbopope <PapstDonB@Googlemail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

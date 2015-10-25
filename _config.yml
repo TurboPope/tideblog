@@ -6,8 +6,7 @@ description: >
 baseurl: ""
 url: "https://github.com/TurboPope/tideblog"
 github_username: turbopope
-gems:
-  - jekyll-sitemap
+gems: [jekyll-assets]
 collections:
   chapters:
     output: true
@@ -20,3 +19,19 @@ defaults:
 
 # Build settings
 markdown: kramdown
+
+# Ignore buildsystem files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - bower_components
+  - bower.json
+
+assets:
+  sources:
+    - _assets/scss
+    - _assets/js
+    - bower_components/bootstrap/scss
+    - bower_components/bootstrap/dist/js
+    - bower_components/jquery/dist
