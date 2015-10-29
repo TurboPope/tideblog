@@ -33,6 +33,7 @@ end
 
 task :bundle_install do
   sh 'bundle install'
+  sh 'bower install'
 end
 
 task :default => 'build'
