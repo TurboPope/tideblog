@@ -23,16 +23,19 @@ task build: :bundle_install do |_, args|
   jekyll 'build', config, *args
 end
 
-task serve: :bundle_install do |_, args|
+task serve: [:bundle_install, :bower_install] do |_, args|
   jekyll 'serve', config, *args
 end
 
-task doctor: :bundle_install do
+task doctor: [:bundle_install, :bower_install] do
   jekyll 'doctor'
 end
 
 task :bundle_install do
   sh 'bundle install'
+end
+
+task :bower_install do
   sh 'bower install'
 end
 
