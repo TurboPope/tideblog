@@ -6,5 +6,15 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <script src="{% asset_path webcomponentsjs/webcomponents-lite.js %}"></script>
+  <link rel="import" href="{% asset_path iron-flex-layout/iron-flex-layout.html %}"/>
+  <link rel="import" href="{% asset_path paper-material/paper-material.html %}"/>
+  <link rel="import" href="{% asset_path polymer/polymer.html %}"/>
+  <link rel="import" href="{% asset_path polymer/polymer-mini.html %}"/>
+  <link rel="import" href="{% asset_path polymer/polymer-micro.html %}"/>
+  <link rel="import" href="{% asset_path paper-card/paper-card.html %}"/>
+  <link rel="import" href="{% asset_path paper-material/paper-material.html %}"/>
+  <link rel="import" href="{% asset_path paper-styles/shadow.html %}"/>
+
   {% stylesheet main %}
 </head>

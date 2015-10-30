@@ -29,9 +29,9 @@ exclude:
   - bower.json
 
 assets:
+  digest: false
+  cachebust: none
   sources:
     - _assets/scss
     - _assets/js
-    - bower_components/bootstrap/scss
-    - bower_components/bootstrap/dist/js
-    - bower_components/jquery/dist
+    - bower_components
