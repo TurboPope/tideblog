@@ -25,7 +25,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
-  - bower_components
   - bower.json
 
 assets:
