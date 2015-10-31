@@ -1,4 +1,4 @@
-<header class="site-header">
+<!-- <header class="site-header">
 
   <div class="wrapper">
 
@@ -18,4 +18,23 @@
 
   </div>
 
-</header>
+</header> -->
+
+<paper-toolbar class="medium-tall">
+  <!-- <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button> -->
+  <a href="/"><div class="title">{{ site.title }}</div></a>
+  <div class="bottom fit" horizontal layout>
+    <paper-tabs selected="0" flex>
+      <paper-tab link>
+        <a href="/about" class="horizontal center-center layout">About</a>
+      </paper-tab>
+      <paper-tab link>
+        <a href="/chapters" class="horizontal center-center layout">Kapitel</a>
+      </paper-tab>
+      <paper-tab link>
+        <a href="#link3" class="horizontal center-center layout">id even k</a>
+      </paper-tab>
+    </paper-tabs>
+  </div>
+  <!-- <paper-icon-button icon="more-vert" on-tap="moreAction"></paper-icon-button> -->
+</paper-toolbar>
