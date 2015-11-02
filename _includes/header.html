@@ -1,7 +1,16 @@
 <paper-toolbar class="medium-tall">
-  <a href="/"><div class="title">{{ site.title }}</div></a>
+  <a href="/"><div class="title">{{site.title}}</div></a>
   <div class="bottom fit" horizontal layout>
-    <paper-tabs selected="0" flex>
+    <paper-tabs selected="
+    {% case page.url %}
+    {% when "/about/" %}
+    0
+    {% when "/chapters/index.html" %}
+    1
+    {% else %}
+    -1
+    {% endcase %}
+    " flex>
       <paper-tab link>
         <a href="/about" class="horizontal center-center layout">About</a>
       </paper-tab>
