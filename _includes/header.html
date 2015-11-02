@@ -1,27 +1,4 @@
-<!-- <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-          <a class="page-link" href="{{ "/chapters" | prepend: site.baseurl }}">Chapters</a>
-      </div>
-    </nav>
-
-  </div>
-
-</header> -->
-
 <paper-toolbar class="medium-tall">
-  <!-- <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button> -->
   <a href="/"><div class="title">{{ site.title }}</div></a>
   <div class="bottom fit" horizontal layout>
     <paper-tabs selected="0" flex>
@@ -36,5 +13,4 @@
       </paper-tab>
     </paper-tabs>
   </div>
-  <!-- <paper-icon-button icon="more-vert" on-tap="moreAction"></paper-icon-button> -->
 </paper-toolbar>
