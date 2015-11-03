@@ -8,15 +8,13 @@ layout: default
 
   <div class="post-box">
     {% for post in site.posts%}
-      <paper-card heading="{{post.title}}">
-        <div class="card-content">
-          <p class="post-box-card-subheading">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <p>{{post.content | truncate:300}}</p>
-        </div>
-        <div class="card-actions">
-          <a href="{{ post.url | prepend: site.baseurl }}">Weiterlesen</a>
-        </div>
-      </paper-card>
+      <tidal-post-card
+        heading="{{post.title}}"
+        subheading="{{ post.date | date: "%b %-d, %Y" }}"
+        href="{{ post.url | prepend: site.baseurl }}"
+      >
+        <p>{{post.content | truncate:300}}</p>
+      </tidal-post-card>
     {% endfor %}
   </div>
 

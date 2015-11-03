@@ -1,0 +1,46 @@
+<link rel="import" href="/bower_components/paper-card/paper-card.html">
+
+<dom-module id="tidal-post-card">
+  <template>
+    <style>
+      paper-card {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+
+      .post-card-subheading {
+        font-size: var(--secondary-text-font-size, 16px * 0.875);
+        color: var(--secondary-text-color, red);
+      }
+    </style>
+
+    <paper-card heading="[[heading]]">
+      <div class="card-content">
+        <p class="post-card-subheading">[[subheading]]</p>
+        <content></content>
+      </div>
+      <div class="card-actions">
+        <a href="[[href]]">Weiterlesen</a>
+      </div>
+    </paper-card>
+  </template>
+  <script>
+  Polymer({
+    is: 'tidal-post-card',
+    properties: {
+      heading: {
+        type: String,
+        value: ''
+      },
+      subheading: {
+        type: String,
+        value: ''
+      },
+      href: {
+        type: String,
+        value: ''
+      }
+    }
+  });
+  </script>
+</dom-module>
