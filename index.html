@@ -13,7 +13,7 @@ layout: default
         subheading="{{ post.date | date: "%b %-d, %Y" }}"
         href="{{ post.url | prepend: site.baseurl }}"
       >
-        <p>{{post.content | truncate:300}}</p>
+        <p>{{post.content | truncatewords:50}}</p>
       </tidal-post-card>
     {% endfor %}
   </div>
