@@ -3,14 +3,19 @@
   <div class="bottom fit" horizontal layout>
     <paper-tabs selected="
     {% case page.url %}
-    {% when "/about/" %}
+    {% when "/index.html" %}
     0
-    {% when "/chapters/index.html" %}
+    {% when "/about/" %}
     1
+    {% when "/chapters/index.html" %}
+    2
     {% else %}
     -1
     {% endcase %}
     " flex>
+      <paper-tab link>
+        <a href="/" class="horizontal center-center layout">Home</a>
+      </paper-tab>
       <paper-tab link>
         <a href="/about" class="horizontal center-center layout">About</a>
       </paper-tab>
