@@ -1,23 +1,23 @@
 /**
- * Reset some basic elements
+ * Reset some basic elements for vertical rhythm
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body, p {
     margin: 0;
     padding: 0;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+p, %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Exempt some elements from vertical rhythm
+ */
+.no-vertical-rhythm * {
+  margin-bottom: 0;
 }
 
 
@@ -67,25 +67,6 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
-
-
-/**
- * Links
- */
-// a {
-//     color: $brand-color;
-//     text-decoration: none;
-//
-//     &:visited {
-//         color: darken($brand-color, 15%);
-//     }
-//
-//     &:hover {
-//         color: $text-color;
-//         text-decoration: underline;
-//     }
-// }
 
 
 
