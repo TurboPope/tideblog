@@ -9,11 +9,7 @@ layout: default
     <paper-icon-item>
       <div class="avatar {{chapter.character}}" item-icon></div>
       <paper-item-body two-line>
-        <div>
-          <a href="{{ chapter.url | prepend: site.baseurl}}">
-            {{ chapter.title }}
-          </a>
-        </div>
+        <a href="{{ chapter.url | prepend: site.baseurl}}">{{chapter.title}}</a>
         <div secondary>{{chapter.content | truncatewords:10}}</div>
       </paper-item-body>
     </paper-icon-item>
