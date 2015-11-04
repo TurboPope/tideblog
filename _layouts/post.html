@@ -6,4 +6,7 @@ layout: default
     subheading="{{ page.date | date: "%b %-d, %Y" }}"
   >
   {{content}}
+  {% if page.next %}
+    <paper-fab icon="icons:arrow-forward" onClick="location.href='{{page.next.url}}'"></paper-fab>
+  {% endif %}
 </tidal-post-card>

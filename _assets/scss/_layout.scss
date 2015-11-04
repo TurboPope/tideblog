@@ -119,3 +119,9 @@
 .spoiler-content {
   @extend .post-content;
 }
+
+tidal-post-card paper-fab {
+  position: absolute;
+  bottom: -28px;
+  right: $spacing-unit;
+}
