@@ -1,5 +1,5 @@
 /**
- * Site footer
+ * Footer
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
@@ -67,42 +67,20 @@
 }
 
 
+/**
+ * Posts
+ */
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
 
-.post-list {
+.post-content {
     margin-left: 0;
     list-style: none;
 
     > li {
         margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
     }
 }
 
@@ -133,11 +111,6 @@
         }
     }
 }
-
-// .fragment-content {
-//   @extend .post-content;
-//   font-family: serif;
-// }
 
 .spoiler-warning {
   color: red;

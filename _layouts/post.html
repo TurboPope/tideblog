@@ -1,17 +1,10 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <paper-card heading="{{page.title}}">
-    <div class="card-content">
-      <p class="post-meta">
-        {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-      </p>
-      <p>
-        {{ content }}
-      </p>
-    </div>
-  </paper-card>
-
-</div>
+<tidal-post-card
+    heading="{{page.title}}"
+    subheading="{{ page.date | date: "%b %-d, %Y" }}"
+    href="{{ page.url | prepend: site.baseurl }}"
+  >
+  {{content}}
+</tidal-post-card>

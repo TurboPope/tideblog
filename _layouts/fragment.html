@@ -1,19 +1,6 @@
 ---
-layout: default
+layout: post
 ---
-<div class="post">
-
-  <paper-card heading="{{page.title}}">
-    <div class="card-content">
-      <p class="post-meta">
-        {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-      </p>
-      <p>
-        <div class="book">
-          {{ content }}
-        </div>
-      </p>
-    </div>
-  </paper-card>
-
+<div class="book">
+  {{ content }}
 </div>
