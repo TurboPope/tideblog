@@ -19,7 +19,7 @@ end
 #  CONFIGS << '_config.compress.yml'
 #end
 
-task build: :bundle_install do |_, args|
+task build: [:bundle_install, :bower_install] do |_, args|
   jekyll 'build', config, *args
 end
 
