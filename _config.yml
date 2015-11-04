@@ -28,8 +28,6 @@ exclude:
   - bower.json
 
 assets:
-  digest: false
-  cachebust: none
   sources:
     - _assets/scss
     - _assets/js
