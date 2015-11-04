@@ -11,6 +11,8 @@
   <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html"/>
   <link rel="import" href="/bower_components/paper-tabs/paper-tabs.html"/>
   <link rel="import" href="/public/elements/tidal-post-card/tidal-post-card.html"/>
+  <link rel="import" href="/bower_components/paper-item/paper-item.html"/>
+  <link rel="import" href="/bower_components/paper-item/paper-icon-item.html"/>
 
   <style is="custom-style">
     :root {
@@ -32,6 +34,39 @@
     .post-box {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .list paper-icon-item {
+      margin-bottom: 8px;
+      /*padding-top: 12px;*/
+      /*background-color: white;*/
+      /*display: inline-block;*/
+      /*width: 240px;*/
+      /*height: 228px;*/
+      /*margin: 12px;*/
+      /*@apply(--shadow-elevation-2dp);*/
+    }
+
+    .avatar {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #ccc;
+    }
+
+    .blue {
+      background-color: var(--paper-light-blue-300);
+    }
+    .red {
+      background-color: var(--paper-red-300);
+    }
+    .orange {
+      background-color: var(--paper-amber-300);
+    }
+    .green {
+      background-color: var(--paper-green-300);
     }
   </style>
 
