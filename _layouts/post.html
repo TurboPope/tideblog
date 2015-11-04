@@ -4,7 +4,6 @@ layout: default
 <tidal-post-card
     heading="{{page.title}}"
     subheading="{{ page.date | date: "%b %-d, %Y" }}"
-    href="{{ page.url | prepend: site.baseurl }}"
   >
   {{content}}
 </tidal-post-card>

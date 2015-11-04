@@ -30,9 +30,11 @@
         <p class="post-card-subheading">[[subheading]]</p>
         <content></content>
       </div>
-      <div class="card-actions">
-        <a href="[[href]]">Weiterlesen</a>
-      </div>
+      <template is="dom-if" if="{{href}}">
+        <div class="card-actions" if="[[href]]">
+          <a href="[[href]]">Weiterlesen</a>
+        </div>
+      </template>
     </paper-card>
   </template>
   <script>
