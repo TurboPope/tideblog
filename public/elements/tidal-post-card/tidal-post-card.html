@@ -3,6 +3,12 @@
 <dom-module id="tidal-post-card">
   <template>
     <style>
+      :host {
+        --paper-card-header-text: {
+          font-weight: normal;
+        }
+      }
+
       paper-card {
         margin-bottom: 16px;
         width: 100%;
@@ -12,6 +18,7 @@
         font-size: var(--secondary-text-font-size, 16px * 0.875);
         color: var(--secondary-text-color, red);
       }
+
     </style>
 
     <paper-card heading="[[heading]]">
