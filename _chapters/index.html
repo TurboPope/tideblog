@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-<h1 class="post-title">Kapitel</h1>
+<h1 class="post-title">Kapitel{{chapter.characters}}</h1>
+
+
 
 <div class="list short" role="listbox">
 {% for chapter in site.chapters %}
   {% unless chapter.url == "/chapters/index.html" %}
     <paper-icon-item>
-      <div class="avatar {{chapter.character}}" item-icon></div>
+      <div class="avatar {{chapter.characters | first}}" item-icon></div>
       <paper-item-body two-line>
         <a href="{{ chapter.url | prepend: site.baseurl}}">{{chapter.title}}</a>
         <div secondary class="no-vertical-rhythm">{{chapter.content | truncatewords:10}}</div>
