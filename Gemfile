@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '2.4.0'
-gem 'kramdown', '1.5.0'
-gem 'pygments.rb', '0.6.3'
+gem 'jekyll'
+gem 'kramdown'
+gem 'pygments.rb'
 gem "uglifier"
 gem "sass"
 gem "guard"
