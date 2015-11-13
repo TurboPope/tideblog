@@ -26,6 +26,7 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - bower.json
+  - vendor
 
 assets:
   sources:
