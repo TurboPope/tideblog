@@ -2,7 +2,11 @@
 title: Die Triumanen
 layout: post
 ---
-**Triumanien** im [Sen](/2015/09/11/compass.md) des Kontinents ist Heimat der **Triumanen**. Ihre Vorfahren, die **Imanen**, lebten auf den großen Inseln des Senmeeres, bis diese durch einen permanenten lokalen Meeresspiegel-Anstieg ihre auf einige wenige karge Inseln reduzierte Heimat verlassen mussten. Bei ihrer Ankunft auf dem Kontinent spalteten sich die Imanen auf in Triumanen und [Visimanen](/2015/11/18/visimanen.html). Als Grund für dieses Zerwürfnis vermuten Historiker neben plötzlich aufgelösten Machtstrukturen die Änderungen der Lebensumstände: Die späteren Triumanen begrüßten das Vorhandensein von Holz, einem auf den Baumarmen großen Inseln extrem kostbaren Rohstoff, während die späteren Visimanen an der starken Tradition der Imanen festhielten und weiterhin vorwiegend mit Steinen bauten. Als neue Herrscher nach Macht strebten genügten diese einfachen Unterschiede in der Bevölkerung, um eine zunächst harmlose Meinungsverschiedenheit in eine Spaltung in zwei Völker eskalieren zu lassen.
+**Triumanien** im [Sen](/2015/09/11/compass.md) des Kontinents ist Heimat der **Triumanen**.
+
+Ihre Vorfahren, die **Imanen**, lebten auf den großen Inseln des Senmeeres, bis diese durch einen permanenten lokalen Meeresspiegel-Anstieg ihre auf einige wenige karge Inseln reduzierte Heimat verlassen mussten. Bei ihrer Ankunft auf dem Kontinent spalteten sich die Imanen auf in Triumanen und [Visimanen](/2015/11/18/visimanen.html).
+
+Als Grund für dieses Zerwürfnis vermuten Historiker neben plötzlich aufgelösten Machtstrukturen die Änderungen der Lebensumstände: Die späteren Triumanen begrüßten das Vorhandensein von Holz, einem auf den Baumarmen großen Inseln extrem kostbaren Rohstoff, während die späteren Visimanen an der starken Tradition der Imanen festhielten und weiterhin vorwiegend mit Steinen bauten. Als neue Herrscher nach Macht strebten genügten diese einfachen Unterschiede in der Bevölkerung, um eine zunächst harmlose Meinungsverschiedenheit in eine Spaltung in zwei Völker eskalieren zu lassen.
 
 Bei der Spaltung vertrieb der damalige Häuptling XXX die Vorfahrend der heutigen Visimanen aus dem Landungsgebiet der Imanen an der Sen-Küste, bevor er das Gebiet als das Reich der neu entstandenen Triumanen erklärte. Es folgten noch viele unerbittliche Streitigkeiten um die Grenze, bis diese sich stabilisierte. Auch in die anderen Richtungen erweiterte XXX sein Reich noch weiter.
 
