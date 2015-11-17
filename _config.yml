@@ -7,6 +7,7 @@ baseurl: ""
 url: "https://github.com/TurboPope/tideblog"
 github_username: turbopope
 gems: [jekyll-assets]
+future: false
 collections:
   chapters:
     output: true
