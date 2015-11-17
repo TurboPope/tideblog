@@ -3,7 +3,7 @@ layout: default
 ---
 <tidal-post-card
     heading="{{page.title}}"
-    subheading="{{ page.date | date: "%b %-d, %Y" }}"
+    subheading="{{ page.date | date: "%b %-d, %Y" }} - {{page.content | number_of_words}} words"
   >
   {{content}}
   {% if page.next %}

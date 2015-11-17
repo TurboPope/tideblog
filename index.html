@@ -10,7 +10,7 @@ layout: default
     {% for post in site.posts%}
       <tidal-post-card
         heading="{{post.title}}"
-        subheading="{{ post.date | date: "%b %-d, %Y" }}"
+        subheading="{{ post.date | date: "%b %-d, %Y" }} - {{post.content | number_of_words}} words"
         href="{{ post.url | prepend: site.baseurl }}"
       >
         <p>{{post.content | truncatewords:50}}</p>
