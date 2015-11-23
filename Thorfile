@@ -23,4 +23,9 @@ class Jekyll < Thor
   def spellcheck(file)
     run("hunspell -d de_DE #{file}")
   end
+
+  desc("bundle_install", "install gems from Gemfile with bundler")
+  def bundle_install
+    run("bundle install")
+  end
 end
