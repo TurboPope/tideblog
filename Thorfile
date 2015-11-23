@@ -28,4 +28,9 @@ class Jekyll < Thor
   def bundle_install
     run("bundle install")
   end
+
+  desc("bower_install", "install frontend dependencies with bower")
+  def bower_install
+    run("bower install")
+  end
 end
