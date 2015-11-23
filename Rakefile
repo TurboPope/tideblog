@@ -31,7 +31,7 @@ task doctor: [:bundle_install, :bower_install] do
   jekyll 'doctor'
 end
 
-task guard: :bundle_install do
+task guard: [:bundle_install, :bower_install] do
   sh 'bundle exec guard'
 end
 
