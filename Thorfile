@@ -1,5 +1,6 @@
 class Jekyll < Thor
   include Thor::Actions
+  require 'fileutils'
 
   def self.source_root
     File.dirname(__FILE__)
@@ -21,7 +22,14 @@ class Jekyll < Thor
 
   desc("publish", "move contents of draft dir to posts dir and prepend consecutive dates")
   def publish
-    run("mv _drafts/*.md _posts/")
+    date = Date.today
+    Dir.glob('_drafts/*.md').sort.each do |draft_filename|
+      if draft_filename.match(/\d+-.*\.md/)
+        new_filename = draft_filename.gsub(/^_drafts\/\d+-/, "#{date.to_s}-")
+        FileUtils.mv(draft_filename, "_posts/#{new_filename}")
+        date = date + 1
+      end
+    end
   end
 
   desc("spellcheck FILE", "spellcheck FILE")
