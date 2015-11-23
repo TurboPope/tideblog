@@ -19,6 +19,11 @@ class Jekyll < Thor
     end
   end
 
+  desc("publish", "move contents of draft dir to posts dir and prepend consecutive dates")
+  def publish
+    run("mv _drafts/*.md _posts/")
+  end
+
   desc("spellcheck FILE", "spellcheck FILE")
   def spellcheck(file)
     run("hunspell -d de_DE #{file}")
