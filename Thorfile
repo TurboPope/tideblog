@@ -18,4 +18,9 @@ class Jekyll < Thor
       f.puts("---")
     end
   end
+
+  desc("spellcheck FILE", "spellcheck FILE")
+  def spellcheck(file)
+    run("hunspell -d de_DE #{file}")
+  end
 end
