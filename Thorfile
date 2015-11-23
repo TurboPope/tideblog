@@ -1,4 +1,10 @@
 class Jekyll < Thor
+  include Thor::Actions
+
+  def self.source_root
+    File.dirname(__FILE__)
+  end
+
   desc "draft LAYOUT TITLE", "create a draft"
   def draft(layout, title)
     draft_dir = "_drafts"
