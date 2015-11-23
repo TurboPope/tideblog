@@ -30,6 +30,10 @@ task :publish do
   # Move contents of draft dir to posts dir and prepend consecutive dates
 end
 
+task :spellcheck, [:filename] do |_, args|
+  sh "hunspell -d de_DE #{args.filename}"
+end
+
 task build: [:bundle_install, :bower_install] do |_, args|
   jekyll 'build', config, *args
 end
