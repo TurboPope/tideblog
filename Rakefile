@@ -13,11 +13,26 @@ def jekyll(*args)
   end
 end
 
+task :draft, [:layout, :title] do |t, args|
+  # Create post in draft dir
+  draft_dir = "_drafts/"
+  index = "0";
+  filename = args.title
+  File.open(draft_dir + index + filename, "w") do |f|
+    f.puts("---")
+    f.puts("title: #{args.title}")
+    f.puts("layout: #{args.layout}")
+    f.puts("---")
+  end
+end
 
-#desc 'Add asset compression'
-#task 'compress' do
-#  CONFIGS << '_config.compress.yml'
-#end
+task :publish do
+  # Move contents of draft dir to posts dir and prepend consecutive dates
+end
+
+task :spellcheck, [:filename] do |_, args|
+  sh "hunspell -d de_DE #{args.filename}"
+end
 
 task build: [:bundle_install, :bower_install] do |_, args|
   jekyll 'build', config, *args
