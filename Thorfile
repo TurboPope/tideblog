@@ -6,10 +6,24 @@ class Jekyll < Thor
     File.dirname(__FILE__)
   end
 
+  $draft_format = /\d+-.*\.md/
+
   desc "draft LAYOUT TITLE", "create a draft"
   def draft(layout, title)
     draft_dir = "_drafts"
-    index = "0";
+
+    highest_index = 0;
+    Dir.glob('_drafts/*.md') do |draft_filename|
+      if draft_filename.match($draft_format)
+        tested_index = draft_filename.match(/^_drafts\/(\d)+-/)[1].to_i
+        puts tested_index
+        if (tested_index >= highest_index)
+          highest_index = tested_index + 1
+        end
+      end
+    end
+    index = highest_index.to_s;
+
     filename = title
     extension = "md"
     File.open("#{draft_dir}/#{index}-#{filename}.#{extension}", "w") do |f|
@@ -24,7 +38,7 @@ class Jekyll < Thor
   def publish
     date = Date.today
     Dir.glob('_drafts/*.md').sort.each do |draft_filename|
-      if draft_filename.match(/\d+-.*\.md/)
+      if draft_filename.match($draft_format)
         new_filename = draft_filename.gsub(/^_drafts\/\d+-/, "#{date.to_s}-")
         FileUtils.mv(draft_filename, "_posts/#{new_filename}")
         date = date + 1
