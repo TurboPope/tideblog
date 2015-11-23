@@ -40,4 +40,11 @@ class Jekyll < Thor
     invoke :bower_install
     run("bundle exec guard")
   end
+
+  desc("jekyll COMMAND, ARGS", "execute a jekyll command")
+  def jekyll(command, *args)
+    invoke :bundle_install, []
+    invoke :bower_install, []
+    run("bundle exec jekyll #{command} #{args.join(' ')}")
+  end
 end
