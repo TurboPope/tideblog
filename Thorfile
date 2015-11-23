@@ -33,4 +33,11 @@ class Jekyll < Thor
   def bower_install
     run("bower install")
   end
+
+  desc("guard", "run local development server with autobuild and browser-autoreload")
+  def guard
+    invoke :bundle_install
+    invoke :bower_install
+    run("bundle exec guard")
+  end
 end

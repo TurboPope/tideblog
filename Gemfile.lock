@@ -144,7 +144,6 @@ DEPENDENCIES
   pygments.rb
   sass
   thin
-  thor
   uglifier
 
 BUNDLED WITH
