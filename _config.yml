@@ -28,6 +28,7 @@ exclude:
   - Rakefile
   - bower.json
   - vendor
+  - Guardfile
 
 assets:
   sources:
