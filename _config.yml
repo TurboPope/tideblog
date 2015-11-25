@@ -29,6 +29,7 @@ exclude:
   - bower.json
   - vendor
   - Guardfile
+  - de_tideblog
 
 assets:
   sources:
