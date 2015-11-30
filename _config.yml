@@ -8,6 +8,7 @@ url: "https://github.com/TurboPope/tideblog"
 github_username: turbopope
 gems: [jekyll-assets]
 future: false
+paginate: 5
 collections:
   chapters:
     output: true

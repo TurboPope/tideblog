@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <div class="post-box">
-    {% for post in site.posts%}
+    {% for post in paginator.posts%}
       <tidal-post-card
         heading="{{post.title}}"
         subheading="{{ post.date | date: "%b %-d, %Y" }} - {{post.content | number_of_words}} words"
@@ -23,6 +23,33 @@ layout: default
     {% endfor %}
   </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <paper-button raised onClick="location.href='{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}'">Prev</paper-button>
+    {% else %}
+      <paper-button disabled>Prev</paper-button>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <paper-button class="colored">{{ page }}</paper-button>
+      {% elsif page == 1 %}
+        <paper-button raised class="colored" onClick="location.href='{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}'">{{ page }}</paper-button>
+      {% else %}
+        <paper-button raised class="colored" onClick="location.href='{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}'">{{ page }}</paper-button>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <paper-button raised onClick="location.href='{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}'">Next</paper-button>
+    {% else %}
+      <paper-button disabled>Next</paper-button>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <br>
+  <p class="rss-subscribe">scrubscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
