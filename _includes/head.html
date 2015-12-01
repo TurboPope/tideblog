@@ -93,6 +93,20 @@
       @apply(--layout-horizontal);
       @apply(--layout-justified);
     }
+
+    .pagination paper-button {
+      background: var(--default-primary-color);
+      color: var(--text-primary-color);
+    }
+
+    .pagination .current {
+      background: var(--accent-color);
+    }
+
+    .pagination paper-button[disabled] {
+      background: var(--light-primary-color);
+      color: var(--secondary-text-color);
+    }
   </style>
 
   {% stylesheet main %}

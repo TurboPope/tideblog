@@ -28,23 +28,23 @@ layout: default
     {% if paginator.previous_page %}
       <paper-button raised onClick="location.href='{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}'">Prev</paper-button>
     {% else %}
-      <paper-button disabled>Prev</paper-button>
+      <paper-button raised disabled>Prev</paper-button>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <paper-button class="colored">{{ page }}</paper-button>
+        <paper-button raised class="current">{{ page }}</paper-button>
       {% elsif page == 1 %}
-        <paper-button raised class="colored" onClick="location.href='{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}'">{{ page }}</paper-button>
+        <paper-button raised onClick="location.href='{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}'">{{ page }}</paper-button>
       {% else %}
-        <paper-button raised class="colored" onClick="location.href='{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}'">{{ page }}</paper-button>
+        <paper-button raised onClick="location.href='{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}'">{{ page }}</paper-button>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
       <paper-button raised onClick="location.href='{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}'">Next</paper-button>
     {% else %}
-      <paper-button disabled>Next</paper-button>
+      <paper-button raised disabled>Next</paper-button>
     {% endif %}
   </div>
   {% endif %}
